@@ -1,7 +1,7 @@
 ---
 import Container from "@/components/container.astro";
 import logoImage from "@/assets/logo.svg";
-import darkLogo from "@/assets/logo-dark.svg";
+import darkLogo from "../../public/londres.png";
 import { Image } from "astro:assets";
 
 interface Menu {
@@ -45,11 +45,11 @@ const mobilemenu: Menu[] = [...leftmenu, ...rightmenu];
 
       <div class="flex items-center justify-between w-full md:w-auto">
         <a class="w-28 dark:hidden" href="/">
-          <img src="/public/londres.png" alt="Logo" />
+          <Image src={darkLogo} alt="Logo" />
         </a>
 
         <a class="hidden w-28 dark:block" href="/">
-          <img src="/public/londres.png" alt="Logo" />
+          <Image src={darkLogo} alt="Logo" />
 
         </a>
 
