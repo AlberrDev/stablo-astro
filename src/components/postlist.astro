@@ -35,7 +35,7 @@ const category = categories.find(
             class="w-full h-full rounded-md"
           />
         ) : (
-          <span class="absolute w-16 h-16 text-gray-200 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <span class="absolute w-16 h-16 text-purple-600 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <Icon
               class="w-4 h-4 text-black"
               name="heroicons:photo"
@@ -50,7 +50,7 @@ const category = categories.find(
     <Label theme={category.color}>{category.title}</Label>
   </a>
   <h2
-    class="mt-2 text-lg font-semibold tracking-normal text-brand-primary dark:text-white">
+    class="mt-2 text-lg font-semibold tracking-normal text-brand-primary dark:text-purple-600">
     <a href={"/blog/" + post.slug}>
       <span
         class="bg-gradient-to-r from-green-200 to-green-100 dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
@@ -62,7 +62,7 @@ const category = categories.find(
   <div class="hidden">
     {
       post.data.excerpt && (
-        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 line-clamp-3">
+        <p class="mt-2 text-sm text-purple-600 dark:text-purple-600line-clamp-3">
           <a href={"/blog/" + post.slug}>{post.data.excerpt}</a>
         </p>
       )
@@ -70,8 +70,8 @@ const category = categories.find(
   </div>
 
   <div
-    class="flex items-center mt-3 space-x-3 text-gray-500 dark:text-gray-400">
-    <div class="flex items-center gap-3">
+    class="flex items-center mt-3 space-x-3 text-purple-600 dark:text-purple-600">
+    <!-- <div class="flex items-center gap-3">
       <div class="relative flex-shrink-0 w-5 h-5">
         {
           author.image && (
@@ -87,10 +87,9 @@ const category = categories.find(
         }
       </div>
       <span class="text-sm">{author.name}</span>
-    </div>
-    <span class="text-xs text-gray-300 dark:text-gray-600"> &bull;</span>
-    <time class="text-sm" datetime={post.data.publishDate}>
+    </div> -->
+    <!-- <time class="text-sm" datetime={post.data.publishDate}>
       {getFormattedDate(post.data.publishDate)}
-    </time>
+    </time> -->
   </div>
 </div>

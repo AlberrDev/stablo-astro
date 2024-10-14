@@ -12,13 +12,13 @@ import Link from "@/components/ui/link.astro";
 <Layout title="About">
   <Container>
     <Pagetitle>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="title">Quienes Vamos al Viaje?</Fragment>
+      <Fragment slot="desc">Los pichulines</Fragment>
     </Pagetitle>
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-12">
       {
-        authors.slice(0, 3).map((item) => (
+        authors.slice(0, 2).map((item) => (
           <div class="group">
             <div class="w-full aspect-square">
               <Image
@@ -32,7 +32,7 @@ import Link from "@/components/ui/link.astro";
             </div>
 
             <div class="mt-4 text-center">
-              <h3 class="text-sm text-gray-500 dark:text-gray-300">
+              <h3 class="text-sm text-gray-500 dark:text-purple-600">
                 {" "}
                 {item.name}
               </h3>
@@ -43,14 +43,9 @@ import Link from "@/components/ui/link.astro";
     </div>
 
     <div class="mx-auto max-w-xl text-center mt-14">
-      <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
+      <p class="text-lg leading-relaxed text-gray-600 dark:text-purple-800">
+        Somos los viajeros mas guapos del mundo, nos gusta comer y visitar ciudades (en navidad mucho mas jeje)
       </p>
-      <div class="mt-8">
-        <Link href="/contact" style="primary">Get in touch</Link>
-      </div>
     </div>
   </Container>
 </Layout>

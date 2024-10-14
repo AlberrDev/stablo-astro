@@ -1,10 +1,10 @@
 ---
-title: "Title Goes Here"
+title: "Viaje a Londres"
 excerpt: "Some description"
 publishDate: "2024-05-29T11:39:36.050Z"
 image: "../../assets/blog/blog1.jpg"
 # category slug: choose from "./src/data/category.js"
-category: "technology"
+category: "londres"
 # remove this line to publish
 draft: true
 # author slug: choose from "./src/data/authors.js"
